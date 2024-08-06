@@ -1,32 +1,64 @@
 /*------- Template styling -------*/
 
 body{
-    max-width: 700px;
+    width: 1400px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 header{
-    background-image: linear-gradient(#000 0%, #00000000 100%);
-    height: 145px;
+    background-image: linear-gradient(#000 10%, #00000080 67%, #00000000 100%);
+    height: 290px;
     display: flex;
 }
 
 header a img{
-    width: 49px;
-    padding: 32px;
+    width: 98px;
+    padding: 64px;
+    
 }
 
 header h1{
+    margin-top: 60px;
     color: #2AACB9;
-    font-size: 24px;
+    font-size: 48px;
     line-height: 90%;
     font-weight: 800;
     font-family: 'Open Sans';
-    color: #2aacb9;
     text-align: center;
     text-shadow:
    -1px -1px 0 #FFF,  
     1px -1px 0 #FFF,
     -1px 1px 0 #FFF,
      1px 1px 0 #FFF;
+    width: 100%;
+    margin-left: -226px;
+}
+
+
+
+#hero-gallery-display{
+    position:relative;
+    z-index: -4;
+    width: 1400px;
+    height: 788px;
+    overflow:hidden;
+    margin-top: -290px;
+}
+
+#hero-gallery{
+    width: 4200px;
+    animation: move 15s ease-in-out 2s infinite alternate;
+    display:flex;
+}
+
+#hero-gallery img{
+    width: 1400px;
+    margin: 0;
+}
+
+@keyframes move {
+	0%,30% { transform: translateX(0); }
+   	40%,70% { transform: translateX(-1400px); }
+   	80%,100% { transform: translateX(-2800px); }
 }
