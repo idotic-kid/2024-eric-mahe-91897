@@ -1,3 +1,20 @@
+/* Global gradient elements */
+.gradient{
+    display: flex;
+    width: 1400px;
+    height: 356px;
+    justify-content: center;
+}
+
+.down{
+    background-image: linear-gradient(#000 10%, #00000080 67%, #00000000 100%);
+}
+
+.up{
+    margin-top: -356px;
+    background-image: linear-gradient(#00000000 0%, #00000080 33%, #000 90%);
+}
+
 /*------- Template styling -------*/
 
 body{
@@ -7,7 +24,6 @@ body{
 }
 
 header{
-    background-image: linear-gradient(#000 10%, #00000080 67%, #00000000 100%);
     height: 290px;
     display: flex;
 }
@@ -15,25 +31,65 @@ header{
 header a img{
     width: 98px;
     padding: 64px;
-    
+}
+
+header .header-texts{
+    margin-top: 40px;
+    margin-left: -226px;
+    width: 100%;
+
 }
 
 header h1{
-    margin-top: 60px;
     color: #2AACB9;
-    font-size: 48px;
+    font-size: 30pt;
     line-height: 90%;
     font-weight: 800;
     font-family: 'Open Sans';
     text-align: center;
-    text-shadow:
-   -1px -1px 0 #FFF,  
+    text-shadow: /* text outline */
+   -1px -1px 0 #FFF,
+   1px 0 0 #FFF,
     1px -1px 0 #FFF,
+    -1px 0 0 #FFF,
     -1px 1px 0 #FFF,
-     1px 1px 0 #FFF;
-    width: 100%;
-    margin-left: -226px;
+    0 1px 0 #FFF,
+    0 -1px 0 #FFF,
+     1px 1px 0 #FFF,
+     -2px -2px 0 #FFF,
+   2px 0 0 #FFF,
+    2px -2px 0 #FFF,
+    -2px 0 0 #FFF,
+    -2px 2px 0 #FFF,
+    0 2px 0 #FFF,
+    0 -2px 0 #FFF,
+     2px 2px 0 #FFF;
+
 }
+
+nav{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color:#FFF;
+    font-family: 'open sans';
+    letter-spacing: 2px;
+    color: #FFFFFFAA;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFFAA;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    color: #FFF;
+}
+
 
 
 
