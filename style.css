@@ -53,16 +53,23 @@ header{
     display: flex;
 }
 
-header a img{
+#main-logo{
+    z-index: 7;
     width: 98px;
-    padding: 64px;
+    margin: 64px;
+    height: fit-content;
 }
+
+#main-logo img{
+    width: 98px;
+}
+
+
 
 header .header-texts{
     margin-top: 40px;
     margin-left: -226px;
     width: 100%;
-
 }
 
 header h1{
