@@ -233,6 +233,7 @@ footer a img{
 
 
 /*---------------- PAGE 2 - NGATI PAOA AND LAKE PUPUKE --------------*/
+
 #ngati-paoa{
     background-color: #efefef;
     padding: 25px;
@@ -265,17 +266,18 @@ footer a img{
 
 
 #lake-pupuke{
+    --pupuke-height: 1552px;
     color: white;
     background-color: #000;
     overflow: hidden;
-    height: 1522px;
+    height: var(--pupuke-height);
 }
 
 .bg-img{
     position: relative;
     z-index: 1;
     margin-top: -356px;
-    height: 1522px;
+    height: var(--pupuke-height);
     margin-left: -200px;
     opacity: 0.5;
 }
@@ -284,9 +286,27 @@ footer a img{
     position: relative;
     margin: 0 auto;
     z-index: 5;
-    top: -1522px;
+    top: calc(var(--pupuke-height)*-1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 900px;
+}
+
+.pupuke-content p{
+    font-size: 18px;
+}
+
+#pupuke-slideshow{
+    position: relative;
+    margin: 0;
+    z-index: 6;
+    top: calc(var(--pupuke-height)*-1);
+    width: 1400px;
+    
+}
+
+#pupuke-slides{
+    width: 4200px;
+    display:flex;
 }
