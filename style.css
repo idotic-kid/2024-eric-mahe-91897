@@ -1,9 +1,11 @@
 /* Global gradient elements */
 .gradient{
+    position: relative;
     display: flex;
     width: 1400px;
     height: 356px;
     justify-content: center;
+    z-index: 4;
 }
 
 .down{
@@ -234,14 +236,14 @@ footer a img{
 #ngati-paoa{
     background-color: #efefef;
     padding: 25px;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #ngati-paoa p{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #ngati-paoa hr{
@@ -250,4 +252,29 @@ footer a img{
 
 #ngati-introduction{
     width: 900px;
+}
+
+#ngati-history{
+    width: 900px;
+}
+
+#ngati-history div{
+    margin: 40px;
+    text-align: center;
+}
+
+
+#lake-pupuke{
+    color: white;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.bg-img{
+    position: relative;
+    z-index: 1;
+    margin-top: -356px;
+    height: 1522px;
+    margin-left: -200px;
+    opacity: 0.4;
 }
