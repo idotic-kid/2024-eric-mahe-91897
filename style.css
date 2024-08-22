@@ -266,11 +266,21 @@ footer a img{
 
 
 #lake-pupuke{
-    --pupuke-height: 1552px;
+    --pupuke-height: 1000px;
     color: white;
     background-color: #000;
     overflow: hidden;
     height: var(--pupuke-height);
+}
+
+#lake-pupuke hr{
+    width: 900px;
+    color: white;
+    margin: 50px 0;
+}
+
+#lake-pupuke p{
+    font-size: 18px;
 }
 
 .bg-img{
@@ -279,14 +289,17 @@ footer a img{
     margin-top: -356px;
     height: var(--pupuke-height);
     margin-left: -200px;
-    opacity: 0.5;
+    opacity: 0.4;
+}
+
+.above{
+    position: relative;
+    top: calc(var(--pupuke-height)*-1);
+    z-index: 6;
 }
 
 .pupuke-content{
-    position: relative;
     margin: 0 auto;
-    z-index: 5;
-    top: calc(var(--pupuke-height)*-1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,16 +310,35 @@ footer a img{
     font-size: 18px;
 }
 
-#pupuke-slideshow{
-    position: relative;
+.pupuke-slideshow{
     margin: 0;
-    z-index: 6;
-    top: calc(var(--pupuke-height)*-1);
     width: 1400px;
-    
+    overflow: hidden;  
 }
 
-#pupuke-slides{
+.pupuke-slides{
     width: 4200px;
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    animation: move 15s ease-in-out 2s infinite alternate;
+}
+
+.pupuke-slide{
+    width: 1400px;
+    padding: 0 250px;
+}
+
+.further-reading-2{
+    width: 1400px;
+    text-align: center;
+    color: white;
+}
+
+.further-reading-2 a{
+    opacity: 0.8;
+    color: white
+}
+
+.further-reading-2 a:hover{
+    opacity: 1;
 }
