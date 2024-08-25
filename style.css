@@ -60,7 +60,7 @@
     margin-top: -356px;
     height: var(--pupuke-height);
     margin-left: -200px;
-    opacity: 0.4;
+    opacity: 0.45;
 }
 
 /*------- Template styling -------*/
@@ -563,18 +563,25 @@ footer a img{
 
 .rangitoto-content .gradient{
     width: 1400px;
+    transition: 0.3s;
 }
 
 .rangitoto-content .up a{
     margin-top: 150px;
+
 }
 
 .rangitoto-content .up a img{
     width: 30px;
+    transition: 0.3s;
 }
 
-.rangitoto-content .up a:hover > img{
-    width: 300px;
+.rangitoto-content .up a:focus > img{
+    transform: rotate(180deg)
+}
+
+.rangitoto-content .up:has(a:focus){
+    margin-top: 100px;
 }
 
 .rangitoto-content .down{
@@ -582,10 +589,32 @@ footer a img{
 }
 
 #maori-association{
-    margin-top: -100px;
     z-index: 9;
 }
 
 #maori-association h2{
     text-align: center;
 }
+
+#waitemata-harbour{
+    margin: 0;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#waitemata-harbour hr{
+    margin: 0;
+    width: 1000px;
+}
+
+.waitemata-content{
+    position: relative;
+    z-index: 7;
+    top: -3300px;
+}
+
+
