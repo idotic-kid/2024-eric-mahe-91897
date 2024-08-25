@@ -54,6 +54,15 @@
     }
 }
 
+.bg-img{
+    position: relative;
+    z-index: 1;
+    margin-top: -356px;
+    height: var(--pupuke-height);
+    margin-left: -200px;
+    opacity: 0.4;
+}
+
 /*------- Template styling -------*/
 
 body{
@@ -417,15 +426,6 @@ footer a img{
     font-size: 18px;
 }
 
-.bg-img{
-    position: relative;
-    z-index: 1;
-    margin-top: -356px;
-    height: var(--pupuke-height);
-    margin-left: -200px;
-    opacity: 0.4;
-}
-
 .above{
     position: relative;
     top: calc(var(--pupuke-height)*-1);
@@ -518,4 +518,74 @@ footer a img{
 
 .right:focus + .pupuke-slides{
     transform: translateX(-1400px);
+}
+
+/*--------- PAGE 3 - RANGITOTO ISLAND AND WAITEMATA HARBOUR ---------*/
+#rangitoto-island{
+    height: 1800px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#rangitoto-island .bg-img{
+    width: 1600px;
+}
+
+.rangitoto-content{
+    color: white;
+    position: relative;
+    top: -2400px;
+    z-index: 7;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rangitoto-content p{
+    width: 900px;
+    font-size: 16px;
+}
+
+.rangitoto-content hr{
+    margin: 0;
+    color: white;
+    width: 1000px;
+}
+
+.rangitoto-content .hr-with-margin{
+    margin: 50px 0 25px;
+}
+
+.rangitoto-content h2{
+    margin: 20px 0;
+}
+
+.rangitoto-content .gradient{
+    width: 1400px;
+}
+
+.rangitoto-content .up a{
+    margin-top: 150px;
+}
+
+.rangitoto-content .up a img{
+    width: 30px;
+}
+
+.rangitoto-content .up a:hover > img{
+    width: 300px;
+}
+
+.rangitoto-content .down{
+    height: 150px;
+}
+
+#maori-association{
+    margin-top: -100px;
+    z-index: 9;
+}
+
+#maori-association h2{
+    text-align: center;
 }
