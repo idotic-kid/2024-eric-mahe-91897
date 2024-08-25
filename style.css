@@ -2,7 +2,6 @@
 .gradient{
     position: relative;
     display: flex;
-    width: 1400px;
     height: 356px;
     justify-content: center;
     z-index: 4;
@@ -238,10 +237,133 @@ footer a img{
     align-items: center;
 }
 
+#homepage-content h1{
+    color: #2AACB9;
+    font-family: Lato, Futura;
+    font-weight: 900;
+}
+
 #homepage-content p{
     width: 500px;
     text-align: center;
 }
+
+#homepage-content hr{
+    width: 1000px;
+    margin: 50px 0;
+}
+
+.vision{
+    font-size: 17.5px;
+}
+
+.motto{
+    font-size: 14px;
+}
+
+.cred{
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    color: #9B9B9B;
+    margin: -50px 0 30px;
+    font-size: 20px;
+}
+
+#waiata{
+    display: flex;
+    justify-content: center;
+}
+
+#waiata br{
+    margin: 20px 0;
+}
+
+#waiata hr{
+    width: 0;
+}
+
+.mao{
+    font-weight: bold;
+}
+
+#home-images{
+    margin: 50px 0;
+    display: flex;
+}
+
+#home-images aside{
+    width: 400px;
+    height: 560px;
+    overflow: hidden;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+#home-images aside img{
+    width: 400px;
+    height: 560px;
+    opacity: 0.4;
+}
+
+#home-images aside h3{
+    font-size: 24px;
+    margin-top: -400px;
+    color: white;
+    opacity: 0.999;
+    width: 280px;
+    text-align: left;
+    font-weight: 300;
+}
+
+#home-images aside p{
+    font-size: 16px;
+    width: 280px;
+    height: 100%;
+    text-overflow: ellipsis;
+    text-align: left;
+    color: white;
+    opacity: 0.999;
+}
+
+#home-images aside div{
+    width: 400px;
+    height: 200px;
+    margin-top: -200px;
+    display: flex;
+
+    align-items: center;
+}
+
+#home-images aside a{
+    width: 30px;
+    transition: 0.3s;
+    display: flex;
+    padding: 5px;
+}
+
+#home-images aside a img{
+    height: 20px;
+    opacity: 1;
+}
+
+#home-images aside a:hover{
+    margin-top: 5px;
+}
+
+#home-images aside a:active{
+    opacity: 0.8;
+}
+
+.home-image-container{
+    width: 780px;
+    height: 560px;
+    overflow: hidden;
+}
+
 
 
 /*---------------- PAGE 2 - NGATI PAOA AND LAKE PUPUKE --------------*/
