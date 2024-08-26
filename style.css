@@ -596,6 +596,7 @@ footer a img{
     text-align: center;
 }
 
+
 #waitemata-harbour{
     margin: 0;
     background-color: #000;
@@ -604,17 +605,33 @@ footer a img{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    height: 1700px;
 }
 
-#waitemata-harbour hr{
+.waitemata-content hr{
+    width: 1000px;
+    color: white;
+    margin: 50px 0 25px;
+}
+
+.marginless{
     margin: 0;
+    color: white;
+    position: relative;
+    z-index: 9;
     width: 1000px;
 }
+
 
 .waitemata-content{
     position: relative;
     z-index: 7;
-    top: -3300px;
+    top: -3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
+.waitemata-content p{
+    width: 900px;
+}
