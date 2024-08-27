@@ -1,5 +1,5 @@
-/* Global gradient elements */
-.gradient{
+/* Global gradient image overlay */
+.gradient{ 
     position: relative;
     display: flex;
     height: 356px;
@@ -248,8 +248,8 @@ footer a img{
 
 #homepage-content h1{
     color: #2AACB9;
-    font-family: Lato, Futura;
-    font-weight: 900;
+    font-family: Futura, Century Gothic;
+    font-weight: 200;
 }
 
 #homepage-content p{
