@@ -373,6 +373,10 @@ footer a img{
     overflow: hidden;
 }
 
+.home-image-container img{
+    height: 560px;
+}
+
 
 
 /*---------------- PAGE 2 - NGATI PAOA AND LAKE PUPUKE --------------*/
