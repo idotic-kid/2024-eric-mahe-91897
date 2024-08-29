@@ -61,7 +61,7 @@
     margin-top: -356px;
     height: var(--pupuke-height);
     margin-left: -200px;
-    opacity: 0.45;
+    opacity: 0.4;
 }
 
 /*------- Template styling -------*/
@@ -290,6 +290,20 @@ footer a img{
 
 #waiata hr{
     width: 0;
+}
+
+.image-gallery{
+    display: flex;
+}
+
+.image-gallery a{
+    margin: 0 10px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.image-gallery a img{
+    height: 200px;
 }
 
 .mao{
@@ -560,7 +574,7 @@ footer a img{
 
 .rangitoto-content p{
     width: 900px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .rangitoto-content hr{
