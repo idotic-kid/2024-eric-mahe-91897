@@ -37,7 +37,8 @@
     letter-spacing: 0.1em;
     line-height: 90%;
     font-weight: 300;
-    font-family: 'Open Sans';
+    font-family: Futura, Century Gothic;
+    font-weight: 200;
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -79,7 +80,8 @@ main{
 
 main h1{
     font-size: 60px;
-
+    font-family: Futura, Century Gothic;
+    font-weight: 200;
 }
 
 html{
@@ -248,8 +250,6 @@ footer a img{
 
 #homepage-content h1{
     color: #2AACB9;
-    font-family: Futura, Century Gothic;
-    font-weight: 200;
 }
 
 #homepage-content p{
@@ -379,7 +379,7 @@ footer a img{
 
 
 
-/*---------------- PAGE 2 - NGATI PAOA AND LAKE PUPUKE --------------*/
+/*---------------- PAGE 3 - NGATI PAOA AND LAKE PUPUKE --------------*/
 
 #ngati-paoa{
     background-color: #efefef;
@@ -454,17 +454,69 @@ footer a img{
     overflow: hidden;
 }
 
-.pupuke-slides{
-    margin-left: -1400px;
-    width: 4200px;
-    display: flex;
-    flex-direction: row;
-    transition: ease 1s;
+.pupuke-slide-selector{
+    display: none;
+}
+
+.pupuke-slideshow label{
+    color: white;
+    cursor:pointer;
+    transition: opacity .7s .4s, background .2s;
+    height: 30px;
+    position: relative;
+    top: 200px;
 }
 
 .pupuke-slide{
+    display: flex;
+    flex-direction: column;
     width: 1400px;
-    padding: 0 250px;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s;
+    overflow: hidden;
+    height: 0px;
+}
+
+
+.pupuke-slideshow label img{
+    transition: 0.3s;
+    height: 30px;
+}
+
+.pupuke-slideshow label:hover > img{
+    height: 20px;
+}
+
+.prev{
+    margin-left: -1200px;
+
+}
+.next{
+    margin-right: -1200px;
+    margin-top: -30px;
+}
+
+.prev img{
+    transform: rotate(90deg);
+}
+
+.next img{
+    transform: rotate(-90deg);
+}
+
+#human-use:checked ~ .pupuke-slide:nth-of-type(1),
+#geology:checked ~ .pupuke-slide:nth-of-type(2),
+#maori-legend:checked ~ .pupuke-slide:nth-of-type(3) {
+    height: 500px;
+    opacity: 1;
+    z-index: 9;
+}
+
+
+.pupuke-slide p{
+    width: 900px;
 }
 
 .further-reading-2{
@@ -484,47 +536,7 @@ footer a img{
     opacity: 1;
 }
 
-.content-switcher{
-    transition: 0.3s;
-}
-
-.content-switcher img{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 200px;
-    opacity: 1;
-    z-index: 9;
-    transition: 0.3s;
-} 
-
-.left img{
-    transform: rotate(90deg);
-    right: -50px;
-}
-
-.right img{
-    transform: rotate(270deg);
-    right: -1250px;
-}
-
-.content-switcher:hover{
-    opacity: 0.7;
-}
-
-.content-switcher:active > img{
-    height: 40px;
-}
-
-.left:focus ~ .pupuke-slides{
-    transform: translateX(1400px);
-}
-
-.right:focus + .pupuke-slides{
-    transform: translateX(-1400px);
-}
-
-/*--------- PAGE 3 - RANGITOTO ISLAND AND WAITEMATA HARBOUR ---------*/
+/*--------- PAGE 2 - RANGITOTO ISLAND AND WAITEMATA HARBOUR ---------*/
 #rangitoto-island{
     height: 1800px;
     overflow: hidden;
