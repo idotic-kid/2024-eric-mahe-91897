@@ -259,7 +259,7 @@ footer a img{
 }
 
 #homepage-content p{
-    width: 500px;
+    width: 520px;
     text-align: center;
 }
 
@@ -269,11 +269,11 @@ footer a img{
 }
 
 .vision{
-    font-size: 17.5px;
+    font-size: 18px;
 }
 
 .motto{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .cred{
@@ -286,12 +286,13 @@ footer a img{
 }
 
 #waiata{
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
 
 #waiata br{
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 #waiata hr{
@@ -312,7 +313,7 @@ footer a img{
     height: 200px;
 }
 
-.mao{
+#waiata .mao{
     font-weight: bold;
 }
 
@@ -345,7 +346,7 @@ footer a img{
     opacity: 0.999;
     width: 280px;
     text-align: left;
-    font-weight: 300;
+    font-weight: 900;
 }
 
 #home-images aside p{
@@ -494,6 +495,7 @@ footer a img{
 }
 
 .pupuke-slide{
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     width: 1400px;
@@ -516,7 +518,6 @@ footer a img{
 
 .prev{
     margin-left: -1200px;
-
 }
 .next{
     margin-right: -1200px;
